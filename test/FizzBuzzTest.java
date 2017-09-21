@@ -1,7 +1,6 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-import static java.lang.String.*;
 
 public class FizzBuzzTest {
     @Test
@@ -38,10 +37,4 @@ public class FizzBuzzTest {
         Assert.assertEquals("FizzBuzz", new FizzBuzz().get(30));
     }
 
-    public static class FizzBuzz {
-
-        public String  get(int number){
-            return number % 15 == 0 ? "FizzBuzz" : number % 5 == 0 ? "Buzz" : number % 3 == 0 ? "Fizz" : valueOf(number);
-        }
-    }
 }
